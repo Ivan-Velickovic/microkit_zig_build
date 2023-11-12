@@ -1,0 +1,10 @@
+# Building Microkit systems with Zig
+
+This is a basic 'hello world' example for a [seL4 Microkit](https://github.com/seL4/microkit)
+system where the [Zig](https://ziglang.org) build system is used to acquire and use the Microkit
+SDK. The 'hello world' is still written in C, it is solely the build system that is Zig code.
+
+This example is mainly for my own reference, but may be useful to other interested in the Zig
+build system and/or Microkit. The [libvmm](https://github.com/au-ts/libvmm) project has non-trivial
+examples of using the Zig build system with Microkit should you be interested.
+
