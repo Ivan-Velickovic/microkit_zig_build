@@ -8,3 +8,21 @@ This example is mainly for my own reference, but may be useful to other interest
 build system and/or Microkit. The [libvmm](https://github.com/au-ts/libvmm) project has non-trivial
 examples of using the Zig build system with Microkit should you be interested.
 
+## Building/running
+
+Dependencies:
+* [Zig compiler](https://ziglang.org/download/) (0.12.0-dev.1583+97e23896a or newer)
+* QEMU, for simulating the hello world.
+
+Just like most Zig projects, to build all you need to do is run:
+```
+zig build
+```
+
+You can see all the build options with `zig build -h`.
+
+If you want to run the example you can do:
+```sh
+zig build qemu
+```
+
