@@ -33,7 +33,7 @@ pub fn build(b: *std.Build) !void {
         },
         .macos => switch (builtin.target.cpu.arch) {
             .x86_64 => "microkit_macos_x64",
-            .aarch64 => "micorkit_macos_arm64",
+            .aarch64 => "microkit_macos_arm64",
             else => {
                 std.debug.print("ERROR: only x64 and ARM64 are supported on macOS.", .{});
                 std.os.exit(1);
