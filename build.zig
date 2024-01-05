@@ -9,13 +9,12 @@ pub fn build(b: *std.Build) !void {
     // For simplicity we hard-code the target to be the QEMU ARM virt platform.
     // This could obviously be extended by say having an array of Zig targets
     // and having a build option to select one of them.
-    const target_query = std.Target.Query{
+    const target = b.resolveTargetQuery(.{
         .cpu_arch = .aarch64,
         .cpu_model = .{ .explicit = &std.Target.arm.cpu.cortex_a53 },
         .os_tag = .freestanding,
         .abi = .none,
-    };
-    const resolved_target = b.resolveTargetQuery(target_query);
+    });
 
     // Microkit name for our target, the QEMU ARM virt platform
     const board = "qemu_arm_virt";
@@ -55,7 +54,7 @@ pub fn build(b: *std.Build) !void {
     // Create a build step for our hello world program
     const exe = b.addExecutable(.{
         .name = "hello.elf",
-        .target = resolved_target,
+        .target = target,
         .optimize = optimize,
     });
     exe.addCSourceFiles(.{ .files = &.{ "hello.c" }});
