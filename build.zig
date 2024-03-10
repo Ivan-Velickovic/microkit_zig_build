@@ -1,9 +1,6 @@
 const std = @import("std");
 const builtin = @import("builtin");
 
-var general_purpose_allocator = std.heap.GeneralPurposeAllocator(.{}){};
-const gpa = general_purpose_allocator.allocator();
-
 pub fn build(b: *std.Build) !void {
     const optimize = b.standardOptimizeOption(.{});
     // For simplicity we hard-code the target to be the QEMU ARM virt platform.
@@ -97,8 +94,7 @@ pub fn build(b: *std.Build) !void {
     b.default_step = microkit_step;
 
     // This is setting up a `qemu` command for running the system image via QEMU.
-    const loader_arg = std.fmt.allocPrint(gpa, "loader,file={s},addr=0x70000000,cpu-num=0", .{ system_image })
-                       catch "Could not format print!";
+    const loader_arg = b.fmt("loader,file={s},addr=0x70000000,cpu-num=0", .{ system_image });
     const qemu_cmd = b.addSystemCommand(&[_][]const u8{
         "qemu-system-aarch64",
         "-machine",
