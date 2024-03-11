@@ -6,14 +6,17 @@
         .microkit_linux_x64 = .{
             .url = "https://trustworthy.systems/Downloads/microkit_tutorial/sdk-linux-x64.tar.gz",
             .hash = "1220f5251e18d9dffa477f00fdfd7d53cc02dfa69a1d3e1e204ffb0df54419aabb2d",
+            .lazy = true,
         },
         .microkit_macos_x64 = .{
             .url = "https://trustworthy.systems/Downloads/microkit_tutorial/sdk-macos-x64.tar.gz",
             .hash = "12205f5780d2fa4608896d0f6b39a39ee0f27550bb1415c3d6c60a6959bd7523dea1",
+            .lazy = true,
         },
         .microkit_macos_arm64 = .{
             .url = "https://trustworthy.systems/Downloads/microkit_tutorial/sdk-macos-arm64.tar.gz",
             .hash = "1220c0a18ba2afe24c40e0f8d84f26bd135cd4dd90e395425e64b5a216574106ca9d",
+            .lazy = true,
         },
     },
     .paths = .{
