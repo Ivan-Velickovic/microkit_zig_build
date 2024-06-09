@@ -1,5 +1,5 @@
 .{
-    .name = "microkkit_hello_world_zig_build",
+    .name = "microkit_hello_world_zig_build",
     .version = "1.0.0",
 
     .dependencies = .{
