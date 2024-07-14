@@ -14,7 +14,7 @@ pub fn build(b: *std.Build) !void {
     });
 
     // Microkit name for our target, the QEMU ARM virt platform
-    const board = "qemu_arm_virt";
+    const board = "qemu_virt_aarch64";
     const config = "debug";
 
     // Depending on the host, we need a different Microkit SDK. Right now
@@ -22,15 +22,15 @@ pub fn build(b: *std.Build) !void {
     // what platform the person compiling the project is using.
     const microkit_dep = switch (builtin.target.os.tag) {
         .linux => switch (builtin.target.cpu.arch) {
-            .x86_64 => b.lazyDependency("microkit_linux_x64", .{}),
+            .x86_64 => b.lazyDependency("microkit_linux_x86_64", .{}),
             else => {
                 std.debug.print("ERROR: only x64 is supported on Linux.", .{});
                 std.os.exit(1);
             }
         },
         .macos => switch (builtin.target.cpu.arch) {
-            .x86_64 => b.lazyDependency("microkit_macos_x64", .{}),
-            .aarch64 => b.lazyDependency("microkit_macos_arm64", .{}),
+            .x86_64 => b.lazyDependency("microkit_macos_x86_64", .{}),
+            .aarch64 => b.lazyDependency("microkit_macos_aarch64", .{}),
             else => {
                 std.debug.print("ERROR: only x64 and ARM64 are supported on macOS.", .{});
                 std.os.exit(1);

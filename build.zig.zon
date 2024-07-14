@@ -3,19 +3,19 @@
     .version = "1.0.0",
 
     .dependencies = .{
-        .microkit_linux_x64 = .{
-            .url = "https://trustworthy.systems/Downloads/microkit_tutorial/sdk-linux-x64.tar.gz",
-            .hash = "1220f5251e18d9dffa477f00fdfd7d53cc02dfa69a1d3e1e204ffb0df54419aabb2d",
+        .microkit_linux_x86_64 = .{
+            .url = "https://github.com/seL4/microkit/releases/download/1.3.0/microkit-sdk-1.3.0-linux-x86-64.tar.gz",
+            .hash = "122098af685c5c06aa06ad3b983d24710999b0166dfd5921988aed18e3562aaea5c4",
             .lazy = true,
         },
-        .microkit_macos_x64 = .{
-            .url = "https://trustworthy.systems/Downloads/microkit_tutorial/sdk-macos-x64.tar.gz",
-            .hash = "12205f5780d2fa4608896d0f6b39a39ee0f27550bb1415c3d6c60a6959bd7523dea1",
+        .microkit_macos_x86_64 = .{
+            .url = "https://github.com/seL4/microkit/releases/download/1.3.0/microkit-sdk-1.3.0-macos-x86-64.tar.gz",
+            .hash = "1220debc938d59cac9e45095db123fffd3a14a7a323d4d42d1b95eae8bb821585273",
             .lazy = true,
         },
-        .microkit_macos_arm64 = .{
-            .url = "https://trustworthy.systems/Downloads/microkit_tutorial/sdk-macos-arm64.tar.gz",
-            .hash = "1220c0a18ba2afe24c40e0f8d84f26bd135cd4dd90e395425e64b5a216574106ca9d",
+        .microkit_macos_aarch64 = .{
+            .url = "https://github.com/seL4/microkit/releases/download/1.3.0/microkit-sdk-1.3.0-macos-aarch64.tar.gz",
+            .hash = "1220f0f01f61bdbd43b075a4a090381de27c54d3768ae6e39455e353417a5cd6a005",
             .lazy = true,
         },
     },
