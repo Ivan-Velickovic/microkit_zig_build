@@ -4,18 +4,18 @@
 
     .dependencies = .{
         .microkit_linux_x86_64 = .{
-            .url = "https://github.com/seL4/microkit/releases/download/1.4.0/microkit-sdk-1.4.0-linux-x86-64.tar.gz",
-            .hash = "1220d1656b3dab54471e2a0386d599ee8b893754b66f060f316b02bcc26304bb2e3f",
+            .url = "https://github.com/seL4/microkit/releases/download/1.4.1/microkit-sdk-1.4.1-linux-x86-64.tar.gz",
+            .hash = "1220f65d8ac142b3ad56b0338959762b0baf249beb2450d4b3a9ffbf9018ea5c3a04",
             .lazy = true,
         },
         .microkit_macos_x86_64 = .{
-            .url = "https://github.com/seL4/microkit/releases/download/1.4.0/microkit-sdk-1.4.0-macos-x86-64.tar.gz",
-            .hash = "122089d47bc978c2ce144ac17a1fe1d1b608a2139595502db0ec2b9eea5d19edd3a9",
+            .url = "https://github.com/seL4/microkit/releases/download/1.4.1/microkit-sdk-1.4.1-macos-x86-64.tar.gz",
+            .hash = "12207e374d6cc29415e788985ef2ef5a6bfd4d26bb471c4f4f73e001bbdd2e0e3493",
             .lazy = true,
         },
         .microkit_macos_aarch64 = .{
-            .url = "https://github.com/seL4/microkit/releases/download/1.4.0/microkit-sdk-1.4.0-macos-aarch64.tar.gz",
-            .hash = "1220de3e0e255048e3fb12ac14a4ea5a12af776f03c54fa045b8f8293492dabe7176",
+            .url = "https://github.com/seL4/microkit/releases/download/1.4.1/microkit-sdk-1.4.1-macos-aarch64.tar.gz",
+            .hash = "122070cb4d8e6b911c0b023fd1db0f74ab68b4ba9ce55754609ea1eab1344a6c4a84",
             .lazy = true,
         },
     },
