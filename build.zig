@@ -8,7 +8,7 @@ pub fn build(b: *std.Build) !void {
     // and having a build option to select one of them.
     const target = b.resolveTargetQuery(.{
         .cpu_arch = .aarch64,
-        .cpu_model = .{ .explicit = &std.Target.arm.cpu.cortex_a53 },
+        .cpu_model = .{ .explicit = &std.Target.aarch64.cpu.cortex_a53 },
         .os_tag = .freestanding,
         .abi = .none,
     });
