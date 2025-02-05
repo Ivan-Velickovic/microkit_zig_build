@@ -61,7 +61,7 @@ pub fn build(b: *std.Build) !void {
         });
         exe.addCSourceFiles(.{ .files = &.{ "hello.c" }});
         exe.addObjectFile(libmicrokit);
-        exe.setLinkerScriptPath(libmicrokit_linker_script);
+        exe.setLinkerScript(libmicrokit_linker_script);
         exe.addIncludePath(libmicrokit_include);
         // Install the ELF in the chosen build directory (defaults to ./zig-out/bin)
         b.installArtifact(exe);
