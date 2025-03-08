@@ -23,6 +23,7 @@ pub fn build(b: *std.Build) !void {
     const microkit_dep = switch (builtin.target.os.tag) {
         .linux => switch (builtin.target.cpu.arch) {
             .x86_64 => b.lazyDependency("microkit_linux_x86_64", .{}),
+            .aarch64 => b.lazyDependency("microkit_linux_aarch64", .{}),
             else => {
                 std.debug.print("ERROR: only x64 is supported on Linux.", .{});
                 std.os.exit(1);

@@ -1,21 +1,26 @@
 .{
-    .name = "microkit_hello_world_zig_build",
+    .name = .microkit_hello_world_zig_build,
     .version = "1.0.0",
 
     .dependencies = .{
         .microkit_linux_x86_64 = .{
-            .url = "https://github.com/seL4/microkit/releases/download/1.4.1/microkit-sdk-1.4.1-linux-x86-64.tar.gz",
-            .hash = "1220f65d8ac142b3ad56b0338959762b0baf249beb2450d4b3a9ffbf9018ea5c3a04",
+            .url = "https://github.com/seL4/microkit/releases/download/2.0.0/microkit-sdk-2.0.0-linux-x86-64.tar.gz",
+            .hash = "N-V-__8AAC7ztAP5lmDssFJFlrQ4i-_2_60zHCPqAgJMIto0",
+            .lazy = true,
+        },
+        .microkit_linux_aarch64 = .{
+            .url = "https://github.com/seL4/microkit/releases/download/2.0.0/microkit-sdk-2.0.0-linux-aarch64.tar.gz",
+            .hash = "N-V-__8AAOYZsgNU6Wox_Yb1WVo0v1fEleH-aIveAvZvSfPd",
             .lazy = true,
         },
         .microkit_macos_x86_64 = .{
-            .url = "https://github.com/seL4/microkit/releases/download/1.4.1/microkit-sdk-1.4.1-macos-x86-64.tar.gz",
-            .hash = "12207e374d6cc29415e788985ef2ef5a6bfd4d26bb471c4f4f73e001bbdd2e0e3493",
+            .url = "https://github.com/seL4/microkit/releases/download/2.0.0/microkit-sdk-2.0.0-macos-x86-64.tar.gz",
+            .hash = "N-V-__8AAE4HsgO5dywYtoILR2BBQ3B9JP04G7TPPAIHUbst",
             .lazy = true,
         },
         .microkit_macos_aarch64 = .{
-            .url = "https://github.com/seL4/microkit/releases/download/1.4.1/microkit-sdk-1.4.1-macos-aarch64.tar.gz",
-            .hash = "122070cb4d8e6b911c0b023fd1db0f74ab68b4ba9ce55754609ea1eab1344a6c4a84",
+            .url = "https://github.com/seL4/microkit/releases/download/2.0.0/microkit-sdk-2.0.0-macos-aarch64.tar.gz",
+            .hash = "N-V-__8AAKaisQPBipZhHDCazcn2ZSDE5-d0Krdyelnxu60A",
             .lazy = true,
         },
     },
@@ -27,4 +32,5 @@
         "build.zig",
         "build.zig.zon",
     },
+    .fingerprint = 0xf858a39749a232f2,
 }

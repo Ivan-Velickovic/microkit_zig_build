@@ -11,7 +11,7 @@ examples of using the Zig build system with Microkit should you be interested.
 ## Building/running
 
 Dependencies:
-* [Zig compiler](https://ziglang.org/download/) (version 0.13.0)
+* [Zig compiler](https://ziglang.org/download/) (version 0.14.0)
 * QEMU (specifically `qemu-system-aarch64`), for simulating the hello world.
 
 Just like most Zig projects, to build all you need to do is run:
