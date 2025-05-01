@@ -4,23 +4,23 @@
 
     .dependencies = .{
         .microkit_linux_x86_64 = .{
-            .url = "https://github.com/seL4/microkit/releases/download/2.0.0/microkit-sdk-2.0.0-linux-x86-64.tar.gz",
-            .hash = "N-V-__8AAC7ztAP5lmDssFJFlrQ4i-_2_60zHCPqAgJMIto0",
+            .url = "https://github.com/seL4/microkit/releases/download/2.0.1/microkit-sdk-2.0.1-linux-x86-64.tar.gz",
+            .hash = "N-V-__8AAEd7uwMsfq3EqS8W7-y__2mOhe2XZmYb-iBpDFrN",
             .lazy = true,
         },
         .microkit_linux_aarch64 = .{
-            .url = "https://github.com/seL4/microkit/releases/download/2.0.0/microkit-sdk-2.0.0-linux-aarch64.tar.gz",
-            .hash = "N-V-__8AAOYZsgNU6Wox_Yb1WVo0v1fEleH-aIveAvZvSfPd",
+            .url = "https://github.com/seL4/microkit/releases/download/2.0.1/microkit-sdk-2.0.1-linux-aarch64.tar.gz",
+            .hash = "N-V-__8AAA-buAMy8vl-Jbhmg598BdNJ-_FH3yTSlfanY11Y",
             .lazy = true,
         },
         .microkit_macos_x86_64 = .{
-            .url = "https://github.com/seL4/microkit/releases/download/2.0.0/microkit-sdk-2.0.0-macos-x86-64.tar.gz",
-            .hash = "N-V-__8AAE4HsgO5dywYtoILR2BBQ3B9JP04G7TPPAIHUbst",
+            .url = "https://github.com/seL4/microkit/releases/download/2.0.1/microkit-sdk-2.0.1-macos-x86-64.tar.gz",
+            .hash = "N-V-__8AAF_kuAOlETyJ5YYnEBzQXNQo30Obo8yVwdrfYZBb",
             .lazy = true,
         },
         .microkit_macos_aarch64 = .{
-            .url = "https://github.com/seL4/microkit/releases/download/2.0.0/microkit-sdk-2.0.0-macos-aarch64.tar.gz",
-            .hash = "N-V-__8AAKaisQPBipZhHDCazcn2ZSDE5-d0Krdyelnxu60A",
+            .url = "https://github.com/seL4/microkit/releases/download/2.0.1/microkit-sdk-2.0.1-macos-aarch64.tar.gz",
+            .hash = "N-V-__8AAD9iuAOY3QuZtCWA1EEMH3YMQwiP82AU6UoOnhKt",
             .lazy = true,
         },
     },
