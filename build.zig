@@ -57,8 +57,10 @@ pub fn build(b: *std.Build) !void {
         // Create a build step for our hello world program
         const exe = b.addExecutable(.{
             .name = "hello.elf",
-            .target = target,
-            .optimize = optimize,
+            .root_module = b.createModule(.{
+                .target = target,
+                .optimize = optimize,
+            }),
         });
         exe.addCSourceFiles(.{ .files = &.{ "hello.c" }});
         exe.addObjectFile(libmicrokit);
